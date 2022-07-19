@@ -13,6 +13,19 @@
 <script>
 import axios from 'axios';
 export default {
+  name: 'HomeView',
+  data () {
+    return {
 
+    }
+  },
+  methods : {
+    save : function() {
+      axios.post('/api/test/post')
+          .then(() => {
+            console.log("test")
+          })
+    }
+  }
 }
 </script>
